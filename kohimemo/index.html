@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>コーヒーメモ</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=0975dbbed3" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=0975dbbed3" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=0975dbbed3" as="style" />
+  <link rel="preload" href="/assets/js/post.js?v=0975dbbed3" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=0975dbbed3") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=0975dbbed3") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=0975dbbed3#icomoon") format('svg');
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=0975dbbed3" media="screen" />
+
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=0975dbbed3" media="screen" />
+
+
+    
+
+    <meta name="description" content="今日（昨日）のコーヒーはベストに近かったので">
+    <link rel="icon" href="http://bmax:2368/content/images/2025/01/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://bmax:2368/kohimemo/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="logs.teslur">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="コーヒーメモ">
+    <meta property="og:description" content="今日（昨日）のコーヒーはベストに近かったので">
+    <meta property="og:url" content="http://bmax:2368/kohimemo/">
+    <meta property="og:image" content="http://bmax:2368/content/images/2025/01/coffee-2847957_1280.jpg">
+    <meta property="article:published_time" content="2023-01-18T07:15:00.000Z">
+    <meta property="article:modified_time" content="2025-01-23T14:25:16.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="コーヒーメモ">
+    <meta name="twitter:description" content="今日（昨日）のコーヒーはベストに近かったので">
+    <meta name="twitter:url" content="http://bmax:2368/kohimemo/">
+    <meta name="twitter:image" content="http://bmax:2368/content/images/2025/01/coffee-2847957_1280.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="teslur / TETSUSHI Fukabori">
+    <meta name="twitter:site" content="@teslur">
+    <meta name="twitter:creator" content="@teslur">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "logs.teslur",
+        "url": "http://bmax:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/milco.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "teslur / TETSUSHI Fukabori",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/kao.jpg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "http://bmax:2368/author/teslur/",
+        "sameAs": [
+            "https://logs.teslur.jp/",
+            "https://twitter.com/teslur"
+        ]
+    },
+    "headline": "コーヒーメモ",
+    "url": "http://bmax:2368/kohimemo/",
+    "datePublished": "2023-01-18T07:15:00.000Z",
+    "dateModified": "2025-01-23T14:25:16.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://bmax:2368/content/images/2025/01/coffee-2847957_1280.jpg",
+        "width": 1200,
+        "height": 800
+    },
+    "description": "今日（昨日）のコーヒーはベストに近かったので",
+    "mainEntityOfPage": "http://bmax:2368/kohimemo/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="logs.teslur" href="http://bmax:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="525e5b606c66f08dbb1af325e7" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://bmax:2368/" data-locale="ja" crossorigin="anonymous"></script>
+    
+    <link href="http://bmax:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=0975dbbed3"></script><style>:root {--ghost-accent-color: #ed8c72;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=0975dbbed3">
+    <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=cardo:400,700|noto-sans:400,700"><style>:root {--gh-font-heading: Cardo;--gh-font-body: Noto Sans;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "http://bmax:2368"
+      // @license-end
+    </script>
+
+
+
+
+    <script>
+      if (typeof Storage !== 'undefined') {
+        const currentSavedTheme = localStorage.getItem('theme')
+
+        if (currentSavedTheme && currentSavedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      }
+    </script>
+  </head>
+  <body class="post-template gh-font-heading-cardo gh-font-body-noto-sans">
+    
+
+
+
+  
+<header class="m-header with-picture js-header"  data-animate="fade-down">
+  <div class="m-mobile-topbar">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="メニューを開く">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="http://bmax:2368" class="m-logo in-mobile-topbar">
+        <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search"  aria-label="検索を開く">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="メニューを閉じる">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="メインメニュー">
+            <ul>
+                <li class="only-desktop">
+                  <a href="http://bmax:2368" class="m-logo">
+                    <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="http://bmax:2368/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="http://bmax:2368/about/">About</a>
+    </li>
+    <li class="nav-pickup-photo">
+      <a href="http://bmax:2368/pickup-photo/">Pickup photo</a>
+    </li>
+
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="サブメニューを開く">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">最近の記事</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/yi-bing-nazi-zun-xin-toxiang-kihe-u-aruihaao-man-todai-duo-wojian-tumeru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/Untitled-design.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる">
+                                      臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/you-liao-dotugurandebiyuwositemita/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/DSC04847----NR_dev.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="有料ドッグランデビューをしてみた">
+                                      有料ドッグランデビューをしてみた
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji-2/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/burger-7009893_1280.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/PXL_20220724_061525508-2.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">タグ</h3>
+                        <ul>
+                              <li class="m-not-found">タグが見つかりませんでした。 :(</li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search"  aria-label="検索を開く">
+              <span class="icon-search" aria-hidden="true"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="ダークモードを切り替え" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                ダークモードを切り替え
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero with-picture" data-animate="fade">
+    <div class="m-hero__picture in-post">
+      <img
+        srcset="
+          /content/images/size/w300/2025/01/coffee-2847957_1280.jpg 300w,
+          /content/images/size/w600/2025/01/coffee-2847957_1280.jpg 600w,
+          /content/images/size/w1000/2025/01/coffee-2847957_1280.jpg 1000w,
+          /content/images/size/w2000/2025/01/coffee-2847957_1280.jpg 2000w
+        "
+        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px"
+        src="/content/images/size/w1000/2025/01/coffee-2847957_1280.jpg"
+        alt=""
+      />
+    </div>
+    </section>
+  
+  <article>
+    <div class="l-content in-post">
+        <div class="l-wrapper in-post  js-animation-wrapper" data-animate="fade-up">
+          <div
+            class="l-post-content js-progress-content">
+            <header class="m-heading">
+              <h1 class="m-heading__title in-post">コーヒーメモ</h1>
+              <div class="m-heading__meta">
+                <span class="m-heading__meta__time">2023年1月18日</span>
+              </div>
+            </header>
+            <div class="pos-relative js-post-content">
+              <div class="m-share">
+                <div class="m-share__content js-sticky">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http://bmax:2368/kohimemo/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="icon-facebook" aria-hidden="true"></span>
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?text=%E3%82%B3%E3%83%BC%E3%83%92%E3%83%BC%E3%83%A1%E3%83%A2&url=http://bmax:2368/kohimemo/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <span class="icon-twitter" aria-hidden="true"></span>
+                  </a>
+                  <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="トップへスクロール">
+                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                    <svg aria-hidden="true">
+                      <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <p>今日（昨日）のコーヒーはベストに近かったので</p><h2 id="%E8%B1%86">豆</h2><p>SOL'S COFFEEで買った<a href="https://sols-coffee.com/products/ethiopia-yirgacheffe-wote-konga-2300">イルガチェフェ</a>。</p>
+<!--kg-card-begin: html-->
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>原産国</td>
+<td>ETHIOPIA</td>
+</tr>
+<tr>
+<td>生産地</td>
+<td>YIRGACHEFFE</td>
+</tr>
+<tr>
+<td>標高</td>
+<td>2300m</td>
+</tr>
+<tr>
+<td>品種</td>
+<td>HEIRLOOM</td>
+</tr>
+<tr>
+<td>精製方法</td>
+<td>NATURAL</td>
+</tr>
+<tr>
+<td>焙煎度</td>
+<td>5.5</td>
+</tr>
+<tr>
+<td>挽目</td>
+<td>下記のKarita ネクストGで<code>-2</code></td>
+</tr>
+<tr>
+<td>使用量</td>
+<td>30g</td>
+</tr>
+</tbody>
+</table>
+<!--kg-card-end: html-->
+<h2 id="%E5%99%A8%E5%85%B7">器具</h2><h3 id="%E3%82%B0%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%80%E3%83%BC">グラインダー</h3><p><a href="https://www.kalita.co.jp/products/nextg.php">Karita ネクストG</a></p><p>挽目は15段階で調整ができる。<br>豆の項目で記載した挽目は真ん中をゼロとして-7〜7の指定が可能な挽目ダイヤルであるとして表記。</p><h3 id="%E3%83%89%E3%83%AA%E3%83%83%E3%83%91%E3%83%BC">ドリッパー</h3><p><a href="https://www.hario.com/w60_dripper.html">HARIO W60</a></p><p>これ結構美味しく出て良いです。</p><h2 id="%E6%B7%B9%E3%82%8C%E6%96%B9">淹れ方</h2>
+<!--kg-card-begin: html-->
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水温</td>
+<td>93℃</td>
+</tr>
+<tr>
+<td>投入量</td>
+<td>420cc</td>
+</tr>
+<tr>
+<td>投入スケジュール</td>
+<td>70cc（~0:35） → 210cc（〜1:45） → 140cc（〜3:30）</td>
+</tr>
+</tbody>
+</table>
+<!--kg-card-end: html-->
+<h2 id="%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88">コメント</h2><p>この前日に90℃で淹れてやや酸味が強かった。<br>93℃でバランスが良くなったし、この抽出時間なら雑味が少ない。<br>あとW60はメッシュとペーパーのダブルフィルターにすることで本当にクリアになって良い。<br>豆がメッシュ部分で止まるので湯に浸かり過ぎないので細かめの挽目でもエグみが少なくて豆の特徴を出しやすい気がする。</p><h2 id="%E7%B7%A0%E3%82%81">締め</h2><p>コーヒー記事を色々書きたいな。</p>
+            </div>
+          </div>
+        </div>
+        <section class="m-author">
+          <div class="m-author__content">
+            <div class="m-author__picture">
+              <a href="http://bmax:2368/author/teslur/" class="m-author-picture" aria-label="teslur / TETSUSHI Fukabori">
+                  <div style="background-image: url(http://bmax:2368/content/images/2025/01/kao.jpg);"></div>
+              </a>
+            </div>
+            <div class="m-author__info">
+              <h4 class="m-author__name">
+                <a href="http://bmax:2368/author/teslur/">teslur / TETSUSHI Fukabori</a>
+              </h4>
+                <p class="m-author__bio">A Software Engineer. I love photography, coffee, hiking, and playing with my dog. I love my family.</p>
+              <ul class="m-author-links">
+                  <li>
+                    <a href="https://logs.teslur.jp/" target="_blank" rel="noopener" aria-label="ウェブサイト">
+                      <span class="icon-globe" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/@teslur" target="_blank" rel="noopener" aria-label="Twitter">
+                      <span class="icon-twitter" aria-hidden="true"></span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </div>
+  </article>
+</main>
+
+
+
+      
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          入力して検索
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="入力して検索">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      検索結果はありません。他のもので試してみてください。
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <nav class="m-footer-social">
+        <a href="https://twitter.com/teslur" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+      <a href="http://bmax:2368/rss" aria-label="RSS">
+        <span class="icon-rss" aria-hidden="true"></span>
+      </a>
+    </nav>
+    <p class="m-footer-copyright">
+      <span>logs.teslur &copy; 2025</span>
+      <span>&nbsp; &bull; &nbsp;</span>
+      <span>公開 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+    <p class="m-footer-copyright jslicense">
+      <a href="/assets/html/javascript.html?v=0975dbbed3" rel="jslicense">JavaScriptライセンス情報</a>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/vendor.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/app.js?v=0975dbbed3"></script>
+
+      <script defer src="/assets/js/post.js?v=0975dbbed3"></script>
+
+
+    
+  </body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Pickup photo</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=0975dbbed3" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=0975dbbed3" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=0975dbbed3" as="style" />
+  <link rel="preload" href="/assets/js/page.js?v=0975dbbed3" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=0975dbbed3") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=0975dbbed3") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=0975dbbed3#icomoon") format('svg');
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=0975dbbed3" media="screen" />
+
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=0975dbbed3" media="screen" />
+
+
+    
+
+    <meta name="description" content="毎年撮った写真の中からお気に入りをピックアップする予定">
+    <link rel="icon" href="http://bmax:2368/content/images/2025/01/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://bmax:2368/pickup-photo/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="logs.teslur">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pickup photo">
+    <meta property="og:description" content="毎年撮った写真の中からお気に入りをピックアップする予定">
+    <meta property="og:url" content="http://bmax:2368/pickup-photo/">
+    <meta property="og:image" content="http://bmax:2368/content/images/2025/01/DSC05693_dev-3.jpg">
+    <meta property="article:published_time" content="2025-01-23T14:48:37.000Z">
+    <meta property="article:modified_time" content="2025-01-23T14:48:36.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pickup photo">
+    <meta name="twitter:description" content="毎年撮った写真の中からお気に入りをピックアップする予定">
+    <meta name="twitter:url" content="http://bmax:2368/pickup-photo/">
+    <meta name="twitter:image" content="http://bmax:2368/content/images/2025/01/DSC05693_dev-3.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="teslur / TETSUSHI Fukabori">
+    <meta name="twitter:site" content="@teslur">
+    <meta name="twitter:creator" content="@teslur">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "logs.teslur",
+        "url": "http://bmax:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/milco.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "teslur / TETSUSHI Fukabori",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/kao.jpg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "http://bmax:2368/author/teslur/",
+        "sameAs": [
+            "https://logs.teslur.jp/",
+            "https://twitter.com/teslur"
+        ]
+    },
+    "headline": "Pickup photo",
+    "url": "http://bmax:2368/pickup-photo/",
+    "datePublished": "2025-01-23T14:48:37.000Z",
+    "dateModified": "2025-01-23T14:48:36.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://bmax:2368/content/images/2025/01/DSC05693_dev-3.jpg",
+        "width": 1200,
+        "height": 800
+    },
+    "description": "毎年撮った写真の中からお気に入りをピックアップする予定",
+    "mainEntityOfPage": "http://bmax:2368/pickup-photo/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="logs.teslur" href="http://bmax:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="525e5b606c66f08dbb1af325e7" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://bmax:2368/" data-locale="ja" crossorigin="anonymous"></script>
+    
+    <link href="http://bmax:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=0975dbbed3"></script><style>:root {--ghost-accent-color: #ed8c72;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=0975dbbed3">
+    <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=cardo:400,700|noto-sans:400,700"><style>:root {--gh-font-heading: Cardo;--gh-font-body: Noto Sans;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "http://bmax:2368"
+      // @license-end
+    </script>
+
+
+
+
+    <script>
+      if (typeof Storage !== 'undefined') {
+        const currentSavedTheme = localStorage.getItem('theme')
+
+        if (currentSavedTheme && currentSavedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      }
+    </script>
+  </head>
+  <body class="page-template page-pickup-photo gh-font-heading-cardo gh-font-body-noto-sans">
+    
+
+
+
+  
+<header class="m-header with-picture js-header"  data-animate="fade-down">
+  <div class="m-mobile-topbar">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="メニューを開く">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="http://bmax:2368" class="m-logo in-mobile-topbar">
+        <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search"  aria-label="検索を開く">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="メニューを閉じる">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="メインメニュー">
+            <ul>
+                <li class="only-desktop">
+                  <a href="http://bmax:2368" class="m-logo">
+                    <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="http://bmax:2368/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="http://bmax:2368/about/">About</a>
+    </li>
+    <li class="nav-pickup-photo nav-current">
+      <a href="http://bmax:2368/pickup-photo/">Pickup photo</a>
+    </li>
+
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="サブメニューを開く">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">最近の記事</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/yi-bing-nazi-zun-xin-toxiang-kihe-u-aruihaao-man-todai-duo-wojian-tumeru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/Untitled-design.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる">
+                                      臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/you-liao-dotugurandebiyuwositemita/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/DSC04847----NR_dev.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="有料ドッグランデビューをしてみた">
+                                      有料ドッグランデビューをしてみた
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji-2/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/burger-7009893_1280.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/PXL_20220724_061525508-2.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">タグ</h3>
+                        <ul>
+                              <li class="m-not-found">タグが見つかりませんでした。 :(</li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search"  aria-label="検索を開く">
+              <span class="icon-search" aria-hidden="true"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="ダークモードを切り替え" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                ダークモードを切り替え
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero with-picture" data-animate="fade">
+    <div class="m-hero__picture ">
+      <img
+        srcset="
+          /content/images/size/w300/2025/01/DSC05693_dev-3.jpg 300w,
+          /content/images/size/w600/2025/01/DSC05693_dev-3.jpg 600w,
+          /content/images/size/w1000/2025/01/DSC05693_dev-3.jpg 1000w,
+          /content/images/size/w2000/2025/01/DSC05693_dev-3.jpg 2000w
+        "
+        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px"
+        src="/content/images/size/w1000/2025/01/DSC05693_dev-3.jpg"
+        alt=""
+      />
+    </div>
+    <div class="m-hero__content" data-animate="fade-down">
+      <h1 class="m-hero-title bigger">Pickup photo</h1>
+        <p class="m-hero-description">毎年撮った写真の中からお気に入りをピックアップする予定</p>
+    </div>
+    </section>
+    <article>
+      <div class="l-content">
+        <div class="l-wrapper in-post" data-animate="fade-up">
+          <div class="l-post-content">
+            <div class="pos-relative js-post-content">
+              <p>毎年撮った写真の中からお気に入りをピックアップする予定</p><h2 id="2024">2024</h2><p>（撮った写真の大半が家族の顔が写っていたのでなし）</p><h2 id="2023">2023</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC04847----NR_dev-1.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC04847----NR_dev-1.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC04847----NR_dev-1.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC04847----NR_dev-1.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC04847----NR_dev-1.jpg 2400w" sizes="(min-width: 1200px) 1200px"></div></div></div></figure><h2 id="2022">2022</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC01313_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC01313_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC01313_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC01313_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC01313_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC02386_dev.jpg" width="2000" height="1125" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC02386_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC02386_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC02386_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC02386_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC02921_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC02921_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC02921_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC02921_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC02921_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC03190_dev.jpg" width="2000" height="3000" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC03190_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC03190_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC03190_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC03190_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC04243_dev.jpg" width="2000" height="3556" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC04243_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC04243_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC04243_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC04243_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><h2 id="2021">2021</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM2106_dev-2-1.jpg" width="2000" height="1125" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM2106_dev-2-1.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM2106_dev-2-1.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM2106_dev-2-1.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM2106_dev-2-1.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM2243_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM2243_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM2243_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM2243_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM2243_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM2305_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM2305_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM2305_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM2305_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM2305_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><h2 id="2020">2020</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM1136_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM1136_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM1136_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM1136_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM1136_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM1576_dev.jpg" width="2000" height="3555" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM1576_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM1576_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM1576_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM1576_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM1851_dev.jpg" width="2000" height="1125" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM1851_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM1851_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM1851_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM1851_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/SDIM0728_dev.jpg" width="2000" height="3000" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/SDIM0728_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/SDIM0728_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/SDIM0728_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/SDIM0728_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><h2 id="2019">2019</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC05411_dev-1.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC05411_dev-1.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC05411_dev-1.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC05411_dev-1.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC05411_dev-1.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC05693_dev-2.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC05693_dev-2.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC05693_dev-2.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC05693_dev-2.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC05693_dev-2.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC05855_dev-1.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC05855_dev-1.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC05855_dev-1.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC05855_dev-1.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC05855_dev-1.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure><h2 id="2018">2018</h2><figure class="kg-card kg-gallery-card kg-width-wide"><div class="kg-gallery-container"><div class="kg-gallery-row"><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC04499_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC04499_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC04499_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC04499_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC04499_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div><div class="kg-gallery-image"><img src="http://bmax:2368/content/images/2025/01/DSC04506_dev.jpg" width="2000" height="1333" loading="lazy" alt="" srcset="http://bmax:2368/content/images/size/w600/2025/01/DSC04506_dev.jpg 600w, http://bmax:2368/content/images/size/w1000/2025/01/DSC04506_dev.jpg 1000w, http://bmax:2368/content/images/size/w1600/2025/01/DSC04506_dev.jpg 1600w, http://bmax:2368/content/images/size/w2400/2025/01/DSC04506_dev.jpg 2400w" sizes="(min-width: 720px) 720px"></div></div></div></figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+</main>
+
+
+
+      
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          入力して検索
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="入力して検索">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      検索結果はありません。他のもので試してみてください。
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <nav class="m-footer-social">
+        <a href="https://twitter.com/teslur" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+      <a href="http://bmax:2368/rss" aria-label="RSS">
+        <span class="icon-rss" aria-hidden="true"></span>
+      </a>
+    </nav>
+    <p class="m-footer-copyright">
+      <span>logs.teslur &copy; 2025</span>
+      <span>&nbsp; &bull; &nbsp;</span>
+      <span>公開 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+    <p class="m-footer-copyright jslicense">
+      <a href="/assets/html/javascript.html?v=0975dbbed3" rel="jslicense">JavaScriptライセンス情報</a>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/vendor.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/app.js?v=0975dbbed3"></script>
+
+      <script defer src="/assets/js/page.js?v=0975dbbed3"></script>
+
+
+    
+  </body>
+</html>

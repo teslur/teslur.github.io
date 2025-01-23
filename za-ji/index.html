@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>雑記</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=0975dbbed3" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=0975dbbed3" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=0975dbbed3" as="style" />
+  <link rel="preload" href="/assets/js/post.js?v=0975dbbed3" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=0975dbbed3") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=0975dbbed3") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=0975dbbed3#icomoon") format('svg');
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=0975dbbed3" media="screen" />
+
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=0975dbbed3" media="screen" />
+
+
+    
+
+    <meta name="description" content="短い雑記">
+    <link rel="icon" href="http://bmax:2368/content/images/2025/01/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="http://bmax:2368/za-ji/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="logs.teslur">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="雑記">
+    <meta property="og:description" content="短い雑記">
+    <meta property="og:url" content="http://bmax:2368/za-ji/">
+    <meta property="og:image" content="http://bmax:2368/content/images/size/w1200/2025/01/PXL_20220724_061525508-2.jpg">
+    <meta property="article:published_time" content="2023-01-21T06:58:00.000Z">
+    <meta property="article:modified_time" content="2025-01-23T14:19:26.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="雑記">
+    <meta name="twitter:description" content="短い雑記">
+    <meta name="twitter:url" content="http://bmax:2368/za-ji/">
+    <meta name="twitter:image" content="http://bmax:2368/content/images/size/w1200/2025/01/PXL_20220724_061525508-2.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="teslur / TETSUSHI Fukabori">
+    <meta name="twitter:site" content="@teslur">
+    <meta name="twitter:creator" content="@teslur">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="676">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "logs.teslur",
+        "url": "http://bmax:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/milco.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "teslur / TETSUSHI Fukabori",
+        "image": {
+            "@type": "ImageObject",
+            "url": "http://bmax:2368/content/images/2025/01/kao.jpg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "http://bmax:2368/author/teslur/",
+        "sameAs": [
+            "https://logs.teslur.jp/",
+            "https://twitter.com/teslur"
+        ]
+    },
+    "headline": "雑記",
+    "url": "http://bmax:2368/za-ji/",
+    "datePublished": "2023-01-21T06:58:00.000Z",
+    "dateModified": "2025-01-23T14:19:26.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://bmax:2368/content/images/size/w1200/2025/01/PXL_20220724_061525508-2.jpg",
+        "width": 1200,
+        "height": 676
+    },
+    "description": "短い雑記",
+    "mainEntityOfPage": "http://bmax:2368/za-ji/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="logs.teslur" href="http://bmax:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="525e5b606c66f08dbb1af325e7" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="http://bmax:2368/" data-locale="ja" crossorigin="anonymous"></script>
+    
+    <link href="http://bmax:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=0975dbbed3"></script><style>:root {--ghost-accent-color: #ed8c72;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=0975dbbed3">
+    <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=cardo:400,700|noto-sans:400,700"><style>:root {--gh-font-heading: Cardo;--gh-font-body: Noto Sans;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "http://bmax:2368"
+      // @license-end
+    </script>
+
+
+
+
+    <script>
+      if (typeof Storage !== 'undefined') {
+        const currentSavedTheme = localStorage.getItem('theme')
+
+        if (currentSavedTheme && currentSavedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      }
+    </script>
+  </head>
+  <body class="post-template gh-font-heading-cardo gh-font-body-noto-sans">
+    
+
+
+
+  
+<header class="m-header with-picture js-header"  data-animate="fade-down">
+  <div class="m-mobile-topbar">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="メニューを開く">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="http://bmax:2368" class="m-logo in-mobile-topbar">
+        <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search"  aria-label="検索を開く">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="メニューを閉じる">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="メインメニュー">
+            <ul>
+                <li class="only-desktop">
+                  <a href="http://bmax:2368" class="m-logo">
+                    <img src="http://bmax:2368/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="http://bmax:2368/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="http://bmax:2368/about/">About</a>
+    </li>
+    <li class="nav-pickup-photo">
+      <a href="http://bmax:2368/pickup-photo/">Pickup photo</a>
+    </li>
+
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="サブメニューを開く">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">最近の記事</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/yi-bing-nazi-zun-xin-toxiang-kihe-u-aruihaao-man-todai-duo-wojian-tumeru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/Untitled-design.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる">
+                                      臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/you-liao-dotugurandebiyuwositemita/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/DSC04847----NR_dev.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="有料ドッグランデビューをしてみた">
+                                      有料ドッグランデビューをしてみた
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji-2/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/burger-7009893_1280.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/PXL_20220724_061525508-2.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">タグ</h3>
+                        <ul>
+                              <li class="m-not-found">タグが見つかりませんでした。 :(</li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search"  aria-label="検索を開く">
+              <span class="icon-search" aria-hidden="true"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="ダークモードを切り替え" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                ダークモードを切り替え
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero with-picture" data-animate="fade">
+    <div class="m-hero__picture in-post">
+      <img
+        srcset="
+          /content/images/size/w300/2025/01/PXL_20220724_061525508-2.jpg 300w,
+          /content/images/size/w600/2025/01/PXL_20220724_061525508-2.jpg 600w,
+          /content/images/size/w1000/2025/01/PXL_20220724_061525508-2.jpg 1000w,
+          /content/images/size/w2000/2025/01/PXL_20220724_061525508-2.jpg 2000w
+        "
+        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px"
+        src="/content/images/size/w1000/2025/01/PXL_20220724_061525508-2.jpg"
+        alt=""
+      />
+    </div>
+    </section>
+  
+  <article>
+    <div class="l-content in-post">
+        <div class="l-wrapper in-post  js-animation-wrapper" data-animate="fade-up">
+          <div
+            class="l-post-content js-progress-content">
+            <header class="m-heading">
+              <h1 class="m-heading__title in-post">雑記</h1>
+              <div class="m-heading__meta">
+                <span class="m-heading__meta__time">2023年1月21日</span>
+              </div>
+            </header>
+            <div class="pos-relative js-post-content">
+              <div class="m-share">
+                <div class="m-share__content js-sticky">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=http://bmax:2368/za-ji/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="icon-facebook" aria-hidden="true"></span>
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?text=%E9%9B%91%E8%A8%98&url=http://bmax:2368/za-ji/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <span class="icon-twitter" aria-hidden="true"></span>
+                  </a>
+                  <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="トップへスクロール">
+                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                    <svg aria-hidden="true">
+                      <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <p>短い雑記</p><h2 id="%E4%BB%8A%E6%97%A5%E3%81%AE%E5%A4%A9%E6%B0%97">今日の天気</h2><p>冬晴れだけどやや風あり。<br>気温はさほど低くないけど日陰は寒い。</p><h2 id="%E4%BB%8A%E6%97%A5%E3%81%AE%E6%95%A3%E6%AD%A9">今日の散歩</h2><p>昼に起きて隅田川沿いを一家総出で散歩。<br>隅田公園（台東区側）にHelinoxの折りたたみ椅子を持ち込んでチェアリングした。</p><p>家で水筒に淹れたコーヒーと途中で買ったマックを公園でほうばった。<br>食事中ずっとミルコが鳩に飛びかかるのを制したり、長女が乗ったベビーカーに体当りするのを防いだりで忙しかった。<br>でもそれが楽しい。</p><p>育休期間中は散歩ばっかりしている。<br>人生のうまみを味わっている。</p><h2 id="%E6%80%9D%E3%81%84%E5%87%BA%E6%B7%B1%E3%81%84%E3%81%93%E3%81%A8">思い出深いこと</h2><p>長女を床に寝転がせていたらミルコがよってきた。<br>これまで通り手足をベロベロにしたあと、長女の横に寝そべった。<br>少し長女の頬をなめて、それから長女のお腹に顎を乗せていた。</p><p>我々夫婦にする甘えの仕草でありながら慈しむような様子。<br>事故が怖くて少し引き離して居たからこれまで距離があったけど、今日はミルコと長女が家族になった記念日なのかもしれない。</p><h2 id="%E4%BB%96%E3%81%AB%E3%82%84%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8">他にやったこと</h2><p><a href="https://doc.rust-jp.rs/book-ja/title-page.html">Rustのthe book</a>を進めている。<br>今の所「3.2 データ型」まで進んだ。<br>ここまでつまずきはない。</p><p>初めてC言語とかRubyに触れたときは環境構築だけで大分時間がかかったけど、今は楽だなぁ。<br>公式ツールで<code>cargo</code>を入れて、あとはLinterとかもろもろ入れたらやりやすい環境が手に入った。（<a href="https://zenn.dev/23prime/articles/74cda5a096a3b3">参考</a>）<br>インストールしたのは</p><ul><li>rust （公式の手順で<code>rustup</code>をインストーラーで入れるだけ）</li><li>cargo （上記と一緒に入る）</li><li>VSCode</li><li>rust-analyzer （VSCode拡張機能）</li><li>cargo edit</li><li>cargo watch</li><li>rustfmt</li><li>Clippy</li></ul><p>なんか作るかなー。</p><h2 id="%E8%80%83%E3%81%88%E3%81%A6%E3%81%84%E3%82%8B%E3%81%93%E3%81%A8">考えていること</h2><p>家を建てたい。<br>断熱とデザインに優れた、庭のある広い家。<br>出産前も半年くらい色々見たり土地を探したりしていたんだけど、また再開したい。</p><p>そのためにも家のことを色々勉強したい。<br><a href="https://anond.hatelabo.jp/20230121004759">この増田</a>はとても参考になったので、書いてあるYoutuberを家族と一緒に見て勉強したりしたい。</p><h2 id="%E6%99%82%E4%BA%8B">時事</h2><p>ウクライナ情勢の折、燃料価格高騰の煽りで電気料金が高騰しているらしい。<br>インターネットには苦しみの声が溢れていた。</p><p>我が家は冬の主力暖房が灯油ストーブなのでさほど電気料金は上がらない。<br>灯油はそんなに高くない…と言っても五年で1.3倍くらいにはなっているようだが。</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://bmax:2368/content/images/2025/01/oil_price.png" class="kg-image" alt="灯油価格の推移" loading="lazy" width="1108" height="706" srcset="http://bmax:2368/content/images/size/w600/2025/01/oil_price.png 600w, http://bmax:2368/content/images/size/w1000/2025/01/oil_price.png 1000w, http://bmax:2368/content/images/2025/01/oil_price.png 1108w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">灯油価格の推移</span></figcaption></figure><p>来週の中頃は今年一番の寒波だそうだ。<br>人死が出ないことを祈るばかり。</p><h2 id="%E7%B7%A0%E3%82%81">締め</h2><p>雑記にそんなものはない。</p>
+            </div>
+          </div>
+        </div>
+        <section class="m-author">
+          <div class="m-author__content">
+            <div class="m-author__picture">
+              <a href="http://bmax:2368/author/teslur/" class="m-author-picture" aria-label="teslur / TETSUSHI Fukabori">
+                  <div style="background-image: url(http://bmax:2368/content/images/2025/01/kao.jpg);"></div>
+              </a>
+            </div>
+            <div class="m-author__info">
+              <h4 class="m-author__name">
+                <a href="http://bmax:2368/author/teslur/">teslur / TETSUSHI Fukabori</a>
+              </h4>
+                <p class="m-author__bio">A Software Engineer. I love photography, coffee, hiking, and playing with my dog. I love my family.</p>
+              <ul class="m-author-links">
+                  <li>
+                    <a href="https://logs.teslur.jp/" target="_blank" rel="noopener" aria-label="ウェブサイト">
+                      <span class="icon-globe" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/@teslur" target="_blank" rel="noopener" aria-label="Twitter">
+                      <span class="icon-twitter" aria-hidden="true"></span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </div>
+  </article>
+</main>
+
+
+
+      
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          入力して検索
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="入力して検索">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      検索結果はありません。他のもので試してみてください。
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <nav class="m-footer-social">
+        <a href="https://twitter.com/teslur" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+      <a href="http://bmax:2368/rss" aria-label="RSS">
+        <span class="icon-rss" aria-hidden="true"></span>
+      </a>
+    </nav>
+    <p class="m-footer-copyright">
+      <span>logs.teslur &copy; 2025</span>
+      <span>&nbsp; &bull; &nbsp;</span>
+      <span>公開 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+    <p class="m-footer-copyright jslicense">
+      <a href="/assets/html/javascript.html?v=0975dbbed3" rel="jslicense">JavaScriptライセンス情報</a>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/vendor.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/app.js?v=0975dbbed3"></script>
+
+      <script defer src="/assets/js/post.js?v=0975dbbed3"></script>
+
+
+    
+  </body>
+</html>
