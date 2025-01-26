@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>有料ドッグランデビューをしてみた</title>
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preload" href="/assets/css/app.css?v=0975dbbed3" as="style" />
+    <link rel="preload" href="/assets/js/manifest.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/vendor.js?v=0975dbbed3" as="script" />
+    <link rel="preload" href="/assets/js/app.js?v=0975dbbed3" as="script" />
+
+      <link rel="preload" href="/assets/css/post.css?v=0975dbbed3" as="style" />
+  <link rel="preload" href="/assets/js/post.js?v=0975dbbed3" as="script" />
+
+
+    <style>
+      /* These font-faces are here to make fonts work if the Ghost instance is installed in a subdirectory */
+
+      /* source-sans-pro-regular */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: local('SourceSansPro-Regular'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-regular.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-600 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: local('SourceSansPro-SemiBold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-600.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* source-sans-pro-700 */
+      @font-face {
+        font-family: 'Source Sans Pro';
+        font-style: normal;
+        font-weight: 700;
+        font-display: swap;
+        src: local('SourceSansPro-Bold'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff2?v=0975dbbed3") format('woff2'),
+            url("/assets/fonts/source-sans-pro/latin/source-sans-pro-700.woff?v=0975dbbed3") format('woff');
+      }
+
+      /* iconmoon */
+      @font-face {
+        font-family: 'icomoon';
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3");
+        src: url("/assets/fonts/icomoon/icomoon.eot?101fc3?v=0975dbbed3#iefix") format('embedded-opentype'),
+        url("/assets/fonts/icomoon/icomoon.ttf?101fc3?v=0975dbbed3") format('truetype'),
+        url("/assets/fonts/icomoon/icomoon.woff?101fc3?v=0975dbbed3") format('woff'),
+        url("/assets/fonts/icomoon/icomoon.svg?101fc3?v=0975dbbed3#icomoon") format('svg');
+      }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="/assets/css/app.css?v=0975dbbed3" media="screen" />
+
+      <link rel="stylesheet" type="text/css" href="/assets/css/post.css?v=0975dbbed3" media="screen" />
+
+
+    
+
+    <meta name="description" content="世の中には有料ドッグランというものがある。
+犬や飼い主の品質が担保され、それはそれは整った環境だという。">
+    <link rel="icon" href="https://logs.teslur.jp/content/images/2025/01/favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="logs.teslur">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="有料ドッグランデビューをしてみた">
+    <meta property="og:description" content="世の中には有料ドッグランというものがある。
+犬や飼い主の品質が担保され、それはそれは整った環境だという。">
+    <meta property="og:url" content="https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/">
+    <meta property="og:image" content="https://logs.teslur.jp/content/images/2025/01/DSC04847----NR_dev.jpg">
+    <meta property="article:published_time" content="2023-02-08T17:18:00.000Z">
+    <meta property="article:modified_time" content="2025-01-23T14:02:58.000Z">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="有料ドッグランデビューをしてみた">
+    <meta name="twitter:description" content="世の中には有料ドッグランというものがある。
+犬や飼い主の品質が担保され、それはそれは整った環境だという。">
+    <meta name="twitter:url" content="https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/">
+    <meta name="twitter:image" content="https://logs.teslur.jp/content/images/2025/01/DSC04847----NR_dev.jpg">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="teslur / TETSUSHI Fukabori">
+    <meta name="twitter:site" content="@teslur">
+    <meta name="twitter:creator" content="@teslur">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="800">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "logs.teslur",
+        "url": "https://logs.teslur.jp/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://logs.teslur.jp/content/images/2025/01/milco.png",
+            "width": 60,
+            "height": 60
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "teslur / TETSUSHI Fukabori",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://logs.teslur.jp/content/images/2025/01/kao.jpg",
+            "width": 1200,
+            "height": 1200
+        },
+        "url": "https://logs.teslur.jp/author/teslur/",
+        "sameAs": [
+            "https://logs.teslur.jp/",
+            "https://twitter.com/teslur"
+        ]
+    },
+    "headline": "有料ドッグランデビューをしてみた",
+    "url": "https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/",
+    "datePublished": "2023-02-08T17:18:00.000Z",
+    "dateModified": "2025-01-23T14:02:58.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://logs.teslur.jp/content/images/2025/01/DSC04847----NR_dev.jpg",
+        "width": 1200,
+        "height": 800
+    },
+    "description": "世の中には有料ドッグランというものがある。\n犬や飼い主の品質が担保され、それはそれは整った環境だという。",
+    "mainEntityOfPage": "https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.107">
+    <link rel="alternate" type="application/rss+xml" title="logs.teslur" href="https://logs.teslur.jp/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/sodo-search.min.js" data-key="525e5b606c66f08dbb1af325e7" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.5/umd/main.css" data-sodo-search="https://logs.teslur.jp/" data-locale="ja" crossorigin="anonymous"></script>
+    
+    <link href="https://logs.teslur.jp/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=0975dbbed3"></script><style>:root {--ghost-accent-color: #ed8c72;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=0975dbbed3">
+    <link rel="preconnect" href="https://fonts.bunny.net"><link rel="stylesheet" href="https://fonts.bunny.net/css?family=cardo:400,700|noto-sans:400,700"><style>:root {--gh-font-heading: Cardo;--gh-font-body: Noto Sans;}</style>
+
+    <style>
+      :root {
+        --primary-subtle-color: var(--ghost-accent-color) !important;
+      }
+    </style>
+
+    <script>
+      // @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&dn=expat.txt Expat
+      const ghostHost = "https://logs.teslur.jp"
+      // @license-end
+    </script>
+
+
+
+
+    <script>
+      if (typeof Storage !== 'undefined') {
+        const currentSavedTheme = localStorage.getItem('theme')
+
+        if (currentSavedTheme && currentSavedTheme === 'dark') {
+          document.documentElement.setAttribute('data-theme', 'dark')
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light')
+        }
+      }
+    </script>
+  </head>
+  <body class="post-template gh-font-heading-cardo gh-font-body-noto-sans">
+    
+
+
+
+  
+<header class="m-header with-picture js-header"  data-animate="fade-down">
+  <div class="m-mobile-topbar">
+    <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="メニューを開く">
+      <span class="icon-menu" aria-hidden="true"></span>
+    </button>
+      <a href="https://logs.teslur.jp" class="m-logo in-mobile-topbar">
+        <img src="https://logs.teslur.jp/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+      </a>
+    <button class="m-icon-button in-mobile-topbar js-open-search"  aria-label="検索を開く">
+      <span class="icon-search" aria-hidden="true"></span>
+    </button>
+  </div>
+
+  <div class="m-menu js-menu">
+    <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="メニューを閉じる">
+      <span class="icon-close"></span>
+    </button>
+    <div class="m-menu__main">
+      <div class="l-wrapper">
+        <div class="m-nav js-main-nav">
+          <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="メインメニュー">
+            <ul>
+                <li class="only-desktop">
+                  <a href="https://logs.teslur.jp" class="m-logo">
+                    <img src="https://logs.teslur.jp/content/images/2025/01/milco.png" alt="logs.teslur" class="">
+                  </a>
+                </li>
+                
+    <li class="nav-home">
+      <a href="https://logs.teslur.jp/">Home</a>
+    </li>
+    <li class="nav-about">
+      <a href="https://logs.teslur.jp/about/">About</a>
+    </li>
+    <li class="nav-pickup-photo">
+      <a href="https://logs.teslur.jp/pickup-photo/">Pickup photo</a>
+    </li>
+
+              <li class="submenu-option js-submenu-option">
+                <button class="m-icon-button in-menu-main more js-toggle-submenu" aria-label="サブメニューを開く">
+                  <span class="icon-more" aria-hidden="true"></span>
+                </button>
+                <div class="m-submenu js-submenu">
+                  <div class="l-wrapper in-submenu">
+                    <section class="m-recent-articles">
+                      <h3 class="m-submenu-title in-recent-articles">最近の記事</h3>
+                          <div class="swiper js-recent-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                  <a href="/yi-bing-nazi-zun-xin-toxiang-kihe-u-aruihaao-man-todai-duo-wojian-tumeru/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/Untitled-design.png" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる">
+                                      臆病な自尊心と向き合う、あるいは傲慢と怠惰を見つめる
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/you-liao-dotugurandebiyuwositemita/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/DSC04847----NR_dev.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="有料ドッグランデビューをしてみた">
+                                      有料ドッグランデビューをしてみた
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji-2/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/burger-7009893_1280.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                                <div class="swiper-slide">
+                                  <a href="/za-ji/" class="m-recent-article">
+                                    <div class="m-recent-article__picture ">
+                                        <img src="/content/images/size/w300/2025/01/PXL_20220724_061525508-2.jpg" loading="lazy" alt="">
+                                    </div>
+                                    <h3 class="m-recent-article__title js-recent-article-title" title="雑記">
+                                      雑記
+                                    </h3>
+                                    <span class="m-recent-article__date">2年前</span>
+                                  </a>
+                                </div>
+                            </div>
+                          </div>
+                    </section>
+                    <section class="m-tags">
+                      <h3 class="m-submenu-title">タグ</h3>
+                        <ul>
+                              <li class="m-not-found">タグが見つかりませんでした。 :(</li>
+                        </ul>
+                    </section>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="m-nav__right">
+            <button class="m-icon-button in-menu-main js-open-search"  aria-label="検索を開く">
+              <span class="icon-search" aria-hidden="true"></span>
+            </button>
+            <div class="m-toggle-darkmode js-tooltip" data-tippy-content="ダークモードを切り替え" tabindex="0">
+              <label for="toggle-darkmode" class="sr-only">
+                ダークモードを切り替え
+              </label>
+              <input id="toggle-darkmode" type="checkbox" class="js-toggle-darkmode">
+              <div>
+                <span class="icon-moon moon" aria-hidden="true"></span>
+                <span class="icon-sunny sun" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+<main class="main-wrap">
+    
+  <section class="m-hero with-picture" data-animate="fade">
+    <div class="m-hero__picture in-post">
+      <img
+        srcset="
+          /content/images/size/w300/2025/01/DSC04847----NR_dev.jpg 300w,
+          /content/images/size/w600/2025/01/DSC04847----NR_dev.jpg 600w,
+          /content/images/size/w1000/2025/01/DSC04847----NR_dev.jpg 1000w,
+          /content/images/size/w2000/2025/01/DSC04847----NR_dev.jpg 2000w
+        "
+        sizes="(max-width: 600px) 600px, (max-width: 1000px) 1000px, 2000px"
+        src="/content/images/size/w1000/2025/01/DSC04847----NR_dev.jpg"
+        alt=""
+      />
+    </div>
+    </section>
+  
+  <article>
+    <div class="l-content in-post">
+        <div class="l-wrapper in-post  js-animation-wrapper" data-animate="fade-up">
+          <div
+            class="l-post-content js-progress-content">
+            <header class="m-heading">
+              <h1 class="m-heading__title in-post">有料ドッグランデビューをしてみた</h1>
+              <div class="m-heading__meta">
+                <span class="m-heading__meta__time">2023年2月9日</span>
+              </div>
+            </header>
+            <div class="pos-relative js-post-content">
+              <div class="m-share">
+                <div class="m-share__content js-sticky">
+                  <a href="https://www.facebook.com/sharer/sharer.php?u=https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Facebook">
+                    <span class="icon-facebook" aria-hidden="true"></span>
+                  </a>
+                  <a href="https://twitter.com/intent/tweet?text=%E6%9C%89%E6%96%99%E3%83%89%E3%83%83%E3%82%B0%E3%83%A9%E3%83%B3%E3%83%87%E3%83%93%E3%83%A5%E3%83%BC%E3%82%92%E3%81%97%E3%81%A6%E3%81%BF%E3%81%9F&url=https://logs.teslur.jp/you-liao-dotugurandebiyuwositemita/"
+                    class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Twitter">
+                    <span class="icon-twitter" aria-hidden="true"></span>
+                  </a>
+                  <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="トップへスクロール">
+                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                    <svg aria-hidden="true">
+                      <circle class="progress-ring__circle js-progress" fill="transparent" r="0" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <p>世の中には有料ドッグランというものがある。<br>犬や飼い主の品質が担保され、それはそれは整った環境だという。</p><h2 id="ramber-dog-field%E3%81%AB%E8%A1%8C%E3%81%A3%E3%81%A6%E3%81%8D%E3%81%9F">RAMBER DOG FIELDに行ってきた</h2><p>今回行ったドッグランは千葉県野田市の<a href="https://www.ramber-dog-field.com/">RAMBER DOG FIELD</a>。</p>
+<!--kg-card-begin: html-->
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1615.0994904571733!2d139.89770886440385!3d35.94210204800614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601899a467749d41%3A0xb2280a91e3a5cbd0!2zUkFNQkVSIERPRyBGSUVMRC_ljYPokYkv44OJ44OD44Kw44Op44OzL-ODl-ODvOODqw!5e0!3m2!1sja!2sjp!4v1675909653240!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<!--kg-card-end: html-->
+<p>車を持っていれば都心からのアクセスは容易。<br>柏ICから降りてしばらく郊外っぽい国道を進めば良い。</p><h2 id="%E8%89%AF%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8">良かったこと</h2><p>だいたい全てが良かった。</p><ol><li>広い</li><li>きれいなプールがある</li><li>常設のきれいな水がある</li><li>全面芝生で石とかが転がってない</li><li>アジリティがおいてある</li><li>人が座る椅子がそこかしこにある</li><li>喧嘩腰に吠えている犬が存在しない</li><li>いる人が全員余裕があって人当たりがいい</li></ol><p>最後の２つはたまたまかもしれない。</p><h2 id="%E6%82%AA%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8">悪かったこと</h2><p>ない。</p><p>金額は大人二人＋犬一頭で4,000円くらい。<br>今回はカフェで食事した代金と高速代金がプラスになるけど、目的地で使うコストとしては高くない。<br>得られたサービスと比較しても決して高くない。</p><p>あるとすれば、住んでる場所に依存するけど、移動時間がかかる。<br>とはいえ普段から1時間以内くらいのドッグランならホイホイ車移動しているので何も変わらない。</p><h2 id="%E6%9C%80%E9%AB%98%E3%81%A0%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8">最高だったこと</h2><h3 id="%E5%A4%A9%E6%B0%97">天気</h3><p>当日（2023年2月5日）は天気が良くて、気温も高くて寒くなく日差しがあって、風もなかった。最高。<br><a href="https://www.data.jma.go.jp/obd/stats/etrn/view/hourly_a1.php?prec_no=45&amp;block_no=0376&amp;year=2023&amp;month=2&amp;day=5&amp;view=">近場の我孫子あたりのアメダスの情報</a>を見ても、昼の時間帯は完全に晴れで日照100%、風速2m/s未満、気温10℃前後とまじで最高。</p><h3 id="%E5%91%A8%E3%82%8A%E3%81%AE%E7%8A%AC">周りの犬</h3><p>ミルコは自分と同じかより大きい犬に対してはビビるんだけど、他の犬が優しくて全然ビビっていなかった。最高。<br>みんな「遊ぼ遊ぼ」って適切な距離感で来てくれて、すごく遊びやすかったみたい。<br>シニアの犬にも優しくできたし、ミルコのコミュニケーション力も上がったかのようだった。</p><p>バーニーズマウンテンドッグのミロくん。<br>ミルコと2ヶ月違いの後輩…だけどミルコよりだいぶしっかりした体。<br>これぞ超大型犬の体躯って感じ。<br>全然吠えず、優しく遊んでくれた。<br>バーニーズマウンテンドッグは水が苦手なんだけど、ミルコと一緒にプール周りで「入る？」「怖くない？」「どうしよ」みたいにグルグルしている姿は本当に愛おしかった。</p><p>レトリバーの群れたち。<br>何度もプールに飛び込んではボールを回収しててさすが「レトリバー（Retriever：獲物を回収する狩猟犬）」という感じだった。<br>泳ぎが上手くてずーっとプールで犬かきをしている子が居て、穏やかな日差しの中で幸せそうに浮く姿がたまらなかった。<br>何頭ものレトリバーがこっちに向かって泳いできたタイミングは「動物のお医者さん」のアザラシ回を思い出した。</p><p>他にもいっぱい居たけど、みんな優しく仲良く遊んでた。<br>天国か？</p><p>愛する犬が幸せに振る舞えている様っていうのは本当に嬉しい。<br>多分犬じゃなくてもそうなんだろう。</p><h3 id="%E5%91%A8%E3%82%8A%E3%81%AE%E4%BA%BA">周りの人</h3><p>同じバーニーズマウンテンドッグ飼いのご夫婦、温厚で親しみやすかった。<br>コミュニケーションの深度を調整しながら近づいてくれるから「少し踏み込んできたな」「こちらもここまで踏み込んでみようかな」を繰り返して安心したコミュニケーションができた。<br>コミュニケーションで安心できるって"良い"んだよな…。最高。</p><p>レトリバー多頭飼いのおばさま。<br>犬飼いに居がちなどの犬にも話しかける人。<br>強引ではなく優しく遊びに誘ってくれた。</p><p>みんな犬が好きなんだなぁ。</p><h3 id="%E3%83%9F%E3%83%AB%E3%82%B3">ミルコ</h3><p>直前の数日に散歩にいけてなかったからか、リードを外したら即フィールド中を駆け巡っていた。<br>これが「駆け巡る」ってやつかーって感じだった。</p><p>大きな犬が多いからワンプロも捗るし、怪我する・させる怖さもない。<br>ちゃんとルールを守ったワンプロができていた。</p><p>そして何より自分からプールに入った！<br>水が嫌いなミルコが、周りの犬が入っているのとプールに気になるおもちゃが浮かんでいるのとでどうしても近寄りたかったのか浅瀬に入っていった！<br>これまでのミルコを見ている人間としては信じられなかった。<br>やっぱみんなでプールに入って遊べているのは楽しそうに見えたのかな。</p><p>心底嬉しかったのはミルコが自分の意思でやれなかったことにチャレンジしていること。<br>彼には彼の喜びがあって、チャレンジがあって、失敗があって、成功がある。<br>あのとき大きなチャレンジをして、小さな成功を得たんだろう。<br>もっともっとチャレンジさせてあげたい。もっともっと色んなことを体験させてあげたい。</p><p>ミルコは人に比べて長くは生きない。<br>犬の中でも短命な方の犬種。<br>その中でも若くて元気な期間は短い。<br>もっとチャレンジして、もっと喜びを見つけてほしい。<br>頑張って機会を与えたい。<br>ミルコと一緒に居て、色んなことに一緒にチャレンジしたい。<br>傲慢な考え方だけどもそう思う。</p><h3 id="%E3%82%AB%E3%83%95%E3%82%A7">カフェ</h3><p>併設のカフェに（当然）犬連れOKのテラス席があるので食事もした。<br>隣にミロくん一家も居て談笑しながらお食事。</p><p>ミロくん一家は3人の娘さんの子育ても終わっているらしく育児の大先輩。<br>長女も可愛がってもらった。<br>ミロくんのお父さんが長女を抱き上げたときはややビビったが。</p><p>カフェの食事は「普通」だったけど不満はない。<br>落ち着いてミルクをやれたし、犬もつないでおけた。</p><h2 id="%E3%81%9D%E3%81%AE%E4%BB%96">その他</h2><p>ミロくん一家に教えてもらったけど<a href="https://petsone.cainz.com/service/selfwash/">カインズにはセルフシャンプーサービスがある</a>らしい。<br>楽にやれるならシャンプーの頻度を上げても良いかも。<br>ミロくんの毛並みがきれいで良かった。</p><h2 id="%E7%B7%A0%E3%82%81">締め</h2><p>最高だったので有料ドッグランには定期的に行こうと思う。</p>
+            </div>
+          </div>
+        </div>
+        <section class="m-author">
+          <div class="m-author__content">
+            <div class="m-author__picture">
+              <a href="https://logs.teslur.jp/author/teslur/" class="m-author-picture" aria-label="teslur / TETSUSHI Fukabori">
+                  <div style="background-image: url(https://logs.teslur.jp/content/images/2025/01/kao.jpg);"></div>
+              </a>
+            </div>
+            <div class="m-author__info">
+              <h4 class="m-author__name">
+                <a href="https://logs.teslur.jp/author/teslur/">teslur / TETSUSHI Fukabori</a>
+              </h4>
+                <p class="m-author__bio">A Software Engineer. I love photography, coffee, hiking, and playing with my dog. I love my family.</p>
+              <ul class="m-author-links">
+                  <li>
+                    <a href="https://logs.teslur.jp/" target="_blank" rel="noopener" aria-label="ウェブサイト">
+                      <span class="icon-globe" aria-hidden="true"></span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/@teslur" target="_blank" rel="noopener" aria-label="Twitter">
+                      <span class="icon-twitter" aria-hidden="true"></span>
+                    </a>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    </div>
+  </article>
+</main>
+
+
+
+      
+<div class="m-search js-search" role="dialog" aria-modal="true" aria-label="Search">
+  <button class="m-icon-button outlined as-close-search js-close-search" aria-label="Close search">
+    <span class="icon-close" aria-hidden="true"></span>
+  </button>
+  <div class="m-search__content">
+    <form class="m-search__form">
+      <div class="pos-relative">
+        <span class="icon-search m-search-icon" aria-hidden="true"></span>
+        <label for="search-input" class="sr-only">
+          入力して検索
+        </label>
+        <input id="search-input" type="text" class="m-input in-search js-input-search" placeholder="入力して検索">
+      </div>
+    </form>
+    <div class="js-search-results hide"></div>
+    <p class="m-not-found align-center hide js-no-results">
+      検索結果はありません。他のもので試してみてください。
+    </p>
+  </div>
+</div>
+
+    
+<footer class="m-footer">
+  <div class="m-footer__content">
+    <nav class="m-footer-social">
+        <a href="https://twitter.com/teslur" target="_blank" rel="noopener" aria-label="Twitter">
+          <span class="icon-twitter" aria-hidden="true"></span>
+        </a>
+      <a href="https://logs.teslur.jp/rss" aria-label="RSS">
+        <span class="icon-rss" aria-hidden="true"></span>
+      </a>
+    </nav>
+    <p class="m-footer-copyright">
+      <span>logs.teslur &copy; 2025</span>
+      <span>&nbsp; &bull; &nbsp;</span>
+      <span>公開 <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a></span>
+    </p>
+    <p class="m-footer-copyright jslicense">
+      <a href="/assets/html/javascript.html?v=0975dbbed3" rel="jslicense">JavaScriptライセンス情報</a>
+    </p>
+  </div>
+</footer>
+
+    <script defer src="/assets/js/manifest.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/vendor.js?v=0975dbbed3"></script>
+    <script defer src="/assets/js/app.js?v=0975dbbed3"></script>
+
+      <script defer src="/assets/js/post.js?v=0975dbbed3"></script>
+
+
+    
+  </body>
+</html>
